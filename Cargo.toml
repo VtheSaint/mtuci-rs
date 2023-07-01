@@ -3,5 +3,6 @@ members = [
 	"guessing_game",
 	"ch1",
 	"hw1",
-	"ownership"
+	"ownership",
+	"hw2"
 ]

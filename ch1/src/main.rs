@@ -1,9 +1,22 @@
 fn main() {
-    println!("Hello, world!");
+    let data = "Rust is great!".to_string();
+
+    get_char(&data);
+    println!("{:?}", data);
+
+    string_uppercase(data.clone());
+    println!("{:?}", data);
+
 }
 
+// Should not take ownership
+fn get_char(data: &String) -> char {
+    data.chars().last().unwrap()
+}
 
+// Should take ownership
+fn string_uppercase(mut data: String) {
+    data = data.to_uppercase();
 
-///
-/// L
-/// 
+    println!("{}", data);
+}
