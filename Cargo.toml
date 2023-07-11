@@ -4,5 +4,7 @@ members = [
 	"ch1",
 	"hw1",
 	"ownership",
-	"hw2"
+	"hw2",
+	"hw4",
+	"Rc_test"
 ]
